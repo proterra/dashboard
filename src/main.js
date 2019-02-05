@@ -3,10 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import CarbonComponentsVue from '@carbon/vue/src/index'
+
 // Require the main Sass manifest file
 require('./assets/sass/main.scss')
-
-Vue.config.productionTip = false
+Vue.use(CarbonComponentsVue)
+Vue.config.productionTip = true
 
 /* eslint-disable no-new */
 new Vue({
